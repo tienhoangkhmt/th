@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .test__transform{
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+      border: 1px solid gray;
+      background-color: aqua;
+      color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: turn infinite 1s linear;
+    }
+    @keyframes turn {
+      from {
+        transform: rotate(0deg) ;
+      }
+      to {
+        transform: rotate(360deg) ;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="test">
+    <div class="test__transform">
+      <p>Hello World</p>
+    </div>
+  </div>
+</body>
+</html>
